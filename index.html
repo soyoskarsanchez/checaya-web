@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="img/favicon.png">
+<title>ChecaYa · Registro de jornada fácil y seguro</title>
+<meta name="description" content="ChecaYa: app para registrar la entrada y salida de tus empleados. Sin internet obligatorio, sin huella, con reportes en PDF y Excel. Para negocios de México.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/png;base64,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">
+<style>
+:root{--verde:#16A34A;--verde-claro:#22C55E;--verde-osc:#0A8447;--navy:#121B22;--navy2:#1B2731;--fondo:#F4F7F5;--texto:#0F172A;--gris:#5B6B78;--naranja:#F97316;--borde:#E3E8E5}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Inter,system-ui,sans-serif;color:var(--texto);background:#fff;line-height:1.6}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+header{position:sticky;top:0;z-index:10;background:rgba(18,27,34,.96);backdrop-filter:blur(6px)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:68px}
+.marca{display:flex;align-items:center;gap:10px;color:#fff;font-weight:800;font-size:22px}
+.marca img{width:38px;height:38px;border-radius:10px}
+.marca span b{color:var(--verde-claro)}
+.links{display:flex;gap:26px;color:#C9D3DA;font-size:15px}
+.links a:hover{color:#fff}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 22px;border-radius:14px;font-weight:700;font-size:15px;transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn-verde{background:linear-gradient(135deg,#28C252,#0A8447);color:#fff}
+.btn-oscuro{background:#000;color:#fff;border:1px solid #2c3a45}
+.btn-oscuro small{display:block;font-size:11px;font-weight:500;color:#9FB0BD;line-height:1.1}
+.btn-oscuro strong{display:block;font-size:17px;line-height:1.2}
+.btn-borde{border:1.5px solid var(--verde);color:var(--verde-osc);background:#fff}
+.hero{background:var(--navy);color:#fff;padding:90px 0 110px;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
+.pill{display:inline-block;background:rgba(34,197,94,.14);color:var(--verde-claro);font-size:13px;font-weight:700;padding:6px 14px;border-radius:999px;margin-bottom:20px}
+h1{font-size:54px;line-height:1.08;font-weight:800;letter-spacing:-1px}
+h1 em{font-style:normal;color:var(--verde-claro)}
+.hero p.sub{color:#B8C4CC;font-size:19px;margin:22px 0 32px;max-width:540px}
+.tiendas{display:flex;gap:14px;flex-wrap:wrap}
+.nota{color:#7F909C;font-size:13px;margin-top:14px}
+.tel{justify-self:center;width:300px;height:600px;background:#0B1116;border-radius:44px;border:10px solid #26333D;padding:22px 18px;display:flex;flex-direction:column;gap:14px;box-shadow:0 30px 80px rgba(0,0,0,.45)}
+.tel .reloj{text-align:center;color:#fff;font-size:58px;font-weight:800;margin-top:24px;letter-spacing:-2px}
+.tel .fecha{text-align:center;color:#8EA0AC;font-size:14px;margin-top:-10px}
+.tel .neg{text-align:center;color:#fff;font-weight:700;font-size:15px;margin-top:10px}
+.tel .b{border-radius:20px;padding:26px 0;text-align:center;font-weight:800;font-size:22px;color:#fff}
+.tel .e{background:var(--verde);margin-top:auto}.tel .s{background:var(--naranja)}
+.tel .ok{background:var(--navy2);border-radius:14px;padding:12px;color:#C9F5D6;font-size:13px;text-align:center}
+section{padding:90px 0}
+h2{font-size:38px;font-weight:800;letter-spacing:-.5px;text-align:center}
+.lead{text-align:center;color:var(--gris);font-size:18px;max-width:680px;margin:14px auto 50px}
+.pasos{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.paso{background:var(--fondo);border-radius:20px;padding:30px}
+.num{width:44px;height:44px;border-radius:12px;background:var(--verde);color:#fff;font-weight:800;display:grid;place-items:center;font-size:20px;margin-bottom:16px}
+.paso h3,.f h3{font-size:19px;margin-bottom:6px}
+.paso p,.f p{color:var(--gris);font-size:15px}
+.funciones{background:var(--fondo)}
+.grid-f{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.f{background:#fff;border:1px solid var(--borde);border-radius:18px;padding:26px}
+.ico{width:46px;height:46px;border-radius:12px;background:#E6F7EC;display:grid;place-items:center;margin-bottom:14px}
+.ico svg{width:24px;height:24px;stroke:var(--verde-osc);fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.modos{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.modo{border-radius:20px;padding:28px;color:#fff;background:var(--navy)}
+.modo .t{font-size:13px;color:var(--verde-claro);font-weight:700}
+.modo h3{font-size:22px;margin:6px 0 8px}
+.modo p{color:#B8C4CC;font-size:15px}
+.precios{background:var(--navy);color:#fff}
+.precios .lead{color:#B8C4CC}
+.tabla{max-width:760px;margin:0 auto;background:var(--navy2);border-radius:20px;overflow:hidden}
+.fila{display:grid;grid-template-columns:1.2fr 1fr 1fr 1fr;padding:13px 24px;border-bottom:1px solid #26333D;font-size:15px}
+.fila.enc{background:#0E161C;color:#8EA0AC;font-size:13px;font-weight:700}
+.fila span:not(:first-child){text-align:right}
+.fila .m{font-weight:800;color:var(--verde-claro)}
+.reglas{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;max-width:1000px;margin:34px auto 0}
+.regla{background:var(--navy2);border-radius:14px;padding:18px;font-size:14px;color:#C9D3DA}
+.regla b{display:block;color:#fff;margin-bottom:4px}
+.tester{background:linear-gradient(135deg,#0A8447,#16A34A);color:#fff;border-radius:28px;padding:56px;display:grid;grid-template-columns:1.3fr 1fr;gap:40px;align-items:center}
+.tester h2{text-align:left;color:#fff}
+.tester p{color:#E1F7E8;font-size:17px;margin:14px 0 0}
+.tester ul{list-style:none;display:grid;gap:10px}
+.tester li{background:rgba(255,255,255,.14);border-radius:12px;padding:12px 16px;font-size:15px}
+.soporte .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card-s{border:1px solid var(--borde);border-radius:20px;padding:28px;display:flex;flex-direction:column;gap:10px}
+.card-s p{color:var(--gris);font-size:15px;flex:1}
+.faq{max-width:780px;margin:0 auto}
+details{border-bottom:1px solid var(--borde);padding:18px 4px}
+summary{cursor:pointer;font-weight:700;font-size:17px;list-style:none;display:flex;justify-content:space-between}
+summary::after{content:"+";color:var(--verde);font-size:22px}
+details[open] summary::after{content:"–"}
+details p{color:var(--gris);margin-top:10px}
+footer{background:var(--navy);color:#8EA0AC;padding:46px 0;font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}
+footer .l{display:flex;gap:22px;flex-wrap:wrap}
+footer a:hover{color:#fff}
+@media(max-width:900px){.hero .wrap,.tester{grid-template-columns:1fr}.tel{display:none}.pasos,.grid-f,.modos,.soporte .cards{grid-template-columns:1fr}.reglas{grid-template-columns:1fr 1fr}h1{font-size:40px}.links{display:none}.tester{padding:34px}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+ <a class="marca" href="#"><img src="img/logo.png" alt="ChecaYa"><span>Checa<b>Ya</b></span></a>
+ <nav class="links"><a href="#como">Cómo funciona</a><a href="#funciones">Funciones</a><a href="#precios">Precios</a><a href="#soporte">Soporte</a></nav>
+ <a class="btn btn-verde" href="#prueba" style="padding:10px 18px">Quiero probarla</a>
+</div></header>
+
+<section class="hero"><div class="wrap">
+ <div>
+  <span class="pill">Listo para el registro electrónico de jornada 2027</span>
+  <h1>Registra la entrada y salida de tu equipo, <em>fácil y seguro.</em></h1>
+  <p class="sub">ChecaYa convierte un celular o tableta en el checador de tu negocio. Sin internet obligatorio, sin huella y con reportes listos para nómina o inspección.</p>
+  <div class="tiendas">
+   <a class="btn btn-oscuro" href="#" aria-label="Próximamente en Google Play">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="#22C55E"><path d="M4 2.5v19l10-9.5L4 2.5zm11.2 10.6l2.6 2.5-11.3 6.3 8.7-8.8zm0-2.2L6.5 2.1l11.3 6.3-2.6 2.5zm3.9 1.1l-2.4 2.3-2.6-2.5 2.6-2.5 2.4 1.4c.7.4.7.9 0 1.3z"/></svg>
+    <span><small>Muy pronto en</small><strong>Google Play</strong></span></a>
+   <a class="btn btn-oscuro" href="#" aria-label="Próximamente en App Store" style="opacity:.55">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="#fff"><path d="M16.4 12.6c0-2.4 2-3.6 2.1-3.7-1.2-1.7-3-1.9-3.6-2-1.5-.2-3 .9-3.8.9-.8 0-2-.9-3.3-.9-1.7 0-3.3 1-4.2 2.6-1.8 3.1-.5 7.7 1.3 10.2.9 1.2 1.9 2.6 3.2 2.6 1.3-.1 1.8-.8 3.3-.8 1.6 0 2 .8 3.4.8 1.4 0 2.3-1.3 3.1-2.5 1-1.4 1.4-2.8 1.4-2.9-.1 0-2.7-1-2.9-4.3zM13.9 4.9c.7-.8 1.2-2 1-3.2-1 .1-2.2.7-2.9 1.5-.6.7-1.2 1.9-1.1 3.1 1.2.1 2.3-.6 3-1.4z"/></svg>
+    <span><small>Más adelante en</small><strong>App Store</strong></span></a>
+  </div>
+  <p class="nota">Disponible para Android. Estamos en pruebas con negocios locales.</p>
+ </div>
+ <div class="tel">
+  <div class="neg">Taller San José · Entrada</div>
+  <div class="reloj">08:02</div>
+  <div class="fecha">lunes, 4 de enero</div>
+  <div class="ok">✓ Entrada registrada — Juan Pérez</div>
+  <div class="b e">ENTRADA</div>
+  <div class="b s">SALIDA</div>
+ </div>
+</div></section>
+
+<section id="como"><div class="wrap">
+ <h2>Así de simple funciona</h2>
+ <p class="lead">Sin cuentas, sin servidores y sin instalar aparatos. Todo se queda en los dispositivos de tu negocio.</p>
+ <div class="pasos">
+  <div class="paso"><div class="num">1</div><h3>Da de alta a tu equipo</h3><p>Desde tu celular agregas a tus empleados y les asignas un PIN de 4 dígitos.</p></div>
+  <div class="paso"><div class="num">2</div><h3>Tus empleados checan</h3><p>Con su nombre y PIN en una tableta del local, o desde su celular con ubicación si trabajan en campo.</p></div>
+  <div class="paso"><div class="num">3</div><h3>Recibes tus reportes</h3><p>Juntas los registros y generas PDF y Excel listos para nómina o para una inspección.</p></div>
+ </div>
+</div></section>
+
+<section style="padding-top:0"><div class="wrap">
+ <div class="modos">
+  <div class="modo"><span class="t">Para el dueño</span><h3>Supervisor</h3><p>Da de alta, corrige, revisa alertas y saca reportes. También puede usar su celular como checador.</p></div>
+  <div class="modo"><span class="t">Para la entrada del local</span><h3>Checador fijo</h3><p>Una tableta o celular, aunque sea usado. Nombre y PIN, o gafete con QR. Bloqueado para que nadie salga de la app.</p></div>
+  <div class="modo"><span class="t">Para el trabajo en campo</span><h3>Empleado</h3><p>Checa desde su celular. La ubicación se toma solo al checar; nunca se rastrea durante el día.</p></div>
+ </div>
+</div></section>
+
+<section id="funciones" class="funciones"><div class="wrap">
+ <h2>Todo lo que tu negocio necesita</h2>
+ <p class="lead">Pensado para talleres, comercios, restaurantes, consultorios y cuadrillas de 5 a 100 personas.</p>
+ <div class="grid-f">
+  <div class="f"><div class="ico"><svg viewBox="0 0 24 24"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg></div><h3>Firma digital</h3><p>Cada registro va firmado. Las correcciones quedan registradas y visibles.</p></div>
+  <div class="f"><div class="ico"><svg viewBox="0 0 24 24"><path d="M2 8.8a15 15 0 0 1 20 0"/><path d="M5 12.5a10 10 0 0 1 14 0"/><line x1="3" y1="3" x2="21" y2="21"/></svg></div><h3>Funciona sin internet</h3><p>Se checa aunque no haya señal. Los datos nunca salen de tu negocio sin tu permiso.</p></div>
+  <div class="f"><div class="ico"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></div><h3>Ubicación al checar</h3><p>Avisa si alguien checa fuera del lugar de trabajo o con ubicación falsa.</p></div>
+  <div class="f"><div class="ico"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v2"/><circle cx="10" cy="7" r="4"/><path d="M21 21v-2a4 4 0 0 0-3-3.9"/></svg></div><h3>Nadie se queda sin registro</h3><p>Quien no tiene celular checa en el local, en el celular de un compañero o lo registra el supervisor.</p></div>
+  <div class="f"><div class="ico"><svg viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="8" y1="13" x2="16" y2="13"/><line x1="8" y1="17" x2="13" y2="17"/></svg></div><h3>Reportes en PDF y Excel</h3><p>Horas, horas extra, alertas y hoja semanal para firma. Exportación lista para inspección.</p></div>
+  <div class="f"><div class="ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/></svg></div><h3>Sin huella y sin anuncios</h3><p>No usamos biometría. Empleados y checadores usan la app gratis.</p></div>
+ </div>
+</div></section>
+
+<section id="precios" class="precios"><div class="wrap">
+ <h2>Precios claros, sin letras chiquitas</h2>
+ <p class="lead">Solo paga el dueño o supervisor. Prueba gratis 15 días.</p>
+ <div class="tabla" id="tabla"><div class="fila enc"><span>Plan</span><span>Empleados</span><span>Mensual</span><span>Anual</span></div></div>
+ <p class="nota" style="text-align:center;margin-top:14px">Precios en pesos mexicanos con IVA incluido. Plan anual = 2 meses gratis. ¿Más de 1,000 empleados? Escríbenos.</p>
+ <div class="reglas">
+  <div class="regla"><b>Empleados gratis</b>Checadores, celulares de empleados y sucursales sin costo.</div>
+  <div class="regla"><b>Cambia cuando quieras</b>Sube o baja de plan en cualquier momento.</div>
+  <div class="regla"><b>Sucursales</b>Desde el Plan 20, ilimitadas.</div>
+  <div class="regla"><b>Tus datos siempre</b>Si dejas de pagar, nadie deja de checar y puedes exportar todo.</div>
+ </div>
+</div></section>
+
+<section id="prueba"><div class="wrap">
+ <div class="tester">
+  <div><h2>¿Quieres probar ChecaYa?</h2><p>Buscamos negocios de prueba: la usas 6 meses gratis a cambio de tus comentarios. Escríbenos por Facebook para conocer los lugares disponibles.</p><div style="margin-top:26px"><a class="btn btn-borde" href="https://www.facebook.com/ChecaYaApp" target="_blank" rel="noopener">Escríbenos por Facebook</a></div></div>
+  <ul><li>6 meses gratis</li><li>Ayuda para configurarla</li><li>Tu opinión define cómo queda la app</li><li>Requisito: un celular o tableta Android</li></ul>
+ </div>
+</div></section>
+
+<section id="soporte" class="soporte" style="background:var(--fondo)"><div class="wrap">
+ <h2>Ayuda y soporte</h2>
+ <p class="lead">Estamos para ayudarte a que ChecaYa funcione en tu negocio.</p>
+ <div class="cards">
+  <div class="card-s"><h3>Manual de uso</h3><p>Guía paso a paso para supervisores y empleados. Puedes imprimirla o guardarla en PDF.</p><a class="btn btn-verde" href="manual.html">Ver manual</a></div>
+  <div class="card-s"><h3>Escríbenos</h3><p>¿Una falla o una duda? Cuéntanos qué pasó y te respondemos.</p><a class="btn btn-verde" href="soporte.html">Ir a soporte</a></div>
+  <div class="card-s"><h3>Facebook</h3><p>Novedades, consejos y mensajes directos.</p><a class="btn btn-borde" href="https://www.facebook.com/ChecaYaApp" target="_blank" rel="noopener">Ir a la página</a></div>
+ </div>
+</div></section>
+
+<section><div class="wrap">
+ <h2>Preguntas frecuentes</h2>
+ <div class="faq" style="margin-top:40px">
+  <details><summary>¿Necesito internet?</summary><p>No para checar. Solo para enviar archivos a tu supervisor y para renovar tu plan.</p></details>
+  <details><summary>¿Tengo que comprar un reloj checador?</summary><p>No. Basta un celular o tableta Android, incluso uno usado o económico.</p></details>
+  <details><summary>¿Mis empleados pagan?</summary><p>No. Solo paga el supervisor. Los empleados usan la app gratis y sin anuncios.</p></details>
+  <details><summary>¿ChecaYa me ayuda con la reforma laboral de 2027?</summary><p>ChecaYa genera un registro electrónico de la jornada con firma digital, listo para inspección. ChecaYa no es asesoría legal: para dudas sobre tus obligaciones, consulta a tu contador o abogado laboral.</p></details>
+  <details><summary>¿Rastrean a mis empleados?</summary><p>No. La ubicación solo se toma en el momento de checar, y solo si el negocio lo pide.</p></details>
+  <details><summary>¿Qué pasa si pierdo mi celular?</summary><p>Con tu respaldo y tu PIN recuperas todo en un celular nuevo.</p></details>
+ </div>
+</div></section>
+
+<footer><div class="wrap">
+ <a class="marca" href="#" style="font-size:18px"><img src="img/logo.png" alt="" style="width:30px;height:30px"><span>Checa<b style="color:var(--verde-claro)">Ya</b></span></a>
+ <div class="l"><a href="privacidad.html">Aviso de privacidad</a><a href="terminos.html">Términos de uso</a><a href="manual.html">Manual</a><a href="soporte.html">Soporte</a><a href="https://www.facebook.com/ChecaYaApp" target="_blank" rel="noopener">Facebook</a></div>
+ <span>© 2026 ChecaYa · Hecho en Monterrey, México</span>
+</div></footer>
+
+<script>
+const planes=[['Plan 10','Hasta 10',99,990],['Plan 20','Hasta 20',149,1490],['Plan 50','Hasta 50',299,2990],['Plan 100','Hasta 100',499,4990],['Plan 200','Hasta 200',899,8990],['Plan 500','Hasta 500',1999,19990],['Plan 500+','Hasta 1,000',3499,34990]];
+const f=n=>'$'+n.toLocaleString('es-MX');
+const t=document.getElementById('tabla');
+planes.forEach(([n,e,m,a])=>{t.insertAdjacentHTML('beforeend',`<div class="fila"><span>${n}</span><span>${e}</span><span class="m">${f(m)}</span><span>${f(a)}</span></div>`)});
+</script>
+</body>
+</html>
