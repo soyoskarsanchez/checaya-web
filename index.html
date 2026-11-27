@@ -69,6 +69,10 @@ h2{font-size:38px;font-weight:800;letter-spacing:-.5px;text-align:center}
 .fila.enc{background:#0E161C;color:#8EA0AC;font-size:13px;font-weight:700}
 .fila span:not(:first-child){text-align:right}
 .fila .m{font-weight:800;color:var(--verde-claro)}
+.fila .a s{color:#8EA0AC;font-size:13px;margin-right:8px}.fila .a b{font-weight:800;color:var(--verde-claro)}
+.oferta{max-width:760px;margin:0 auto 18px;text-align:center}.oferta .pill{margin-bottom:0;font-size:16px;padding:9px 20px}
+.promo-nota{max-width:760px;margin:16px auto 0;background:var(--navy2);border-left:4px solid var(--verde-claro);border-radius:12px;padding:14px 18px;font-size:14px;color:#C9D3DA;text-align:left}
+@media(max-width:600px){.fila{padding:13px 14px;font-size:14px}.fila .a s{display:block;margin:0}}
 .reglas{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;max-width:1000px;margin:34px auto 0}
 .regla{background:var(--navy2);border-radius:14px;padding:18px;font-size:14px;color:#C9D3DA}
 .regla b{display:block;color:#fff;margin-bottom:4px}
@@ -159,8 +163,10 @@ footer a:hover{color:#fff}
 <section id="precios" class="precios"><div class="wrap">
  <h2>Precios claros, sin letras chiquitas</h2>
  <p class="lead">Solo paga el dueño o supervisor. Prueba gratis 15 días.</p>
+ <div class="oferta"><span class="pill">¡Oferta de lanzamiento! Paga 5 meses y disfruta 12</span></div>
  <div class="tabla" id="tabla"><div class="fila enc"><span>Plan</span><span>Empleados</span><span>Mensual</span><span>Anual</span></div></div>
- <p class="nota" style="text-align:center;margin-top:14px">Precios en pesos mexicanos con IVA incluido. Plan anual = 2 meses gratis. ¿Más de 1,000 empleados? Escríbenos.</p>
+ <p class="nota" style="text-align:center;margin-top:14px">Precios en pesos mexicanos con IVA incluido. ¿Más de 1,000 empleados? Escríbenos.</p>
+ <p class="promo-nota"><b style="color:#fff">Promoción de lanzamiento:</b> todas las anualidades con 50% de descuento. Comienza cuando ChecaYa esté disponible oficialmente en Google Play y termina el 31 de mayo de 2027. A partir del 1 de junio de 2027, las nuevas contrataciones anuales y las renovaciones posteriores serán a precio regular. Las mensualidades conservan su precio regular.</p>
  <div class="reglas">
   <div class="regla"><b>Empleados gratis</b>Checadores, celulares de empleados y sucursales sin costo.</div>
   <div class="regla"><b>Cambia cuando quieras</b>Sube o baja de plan en cualquier momento.</div>
@@ -171,8 +177,8 @@ footer a:hover{color:#fff}
 
 <section id="prueba"><div class="wrap">
  <div class="tester">
-  <div><h2>¿Quieres probar ChecaYa?</h2><p>Buscamos negocios de prueba: la usas 6 meses gratis a cambio de tus comentarios. Escríbenos por Facebook para conocer los lugares disponibles.</p><div style="margin-top:26px"><a class="btn btn-borde" href="https://www.facebook.com/ChecaYaApp" target="_blank" rel="noopener">Escríbenos por Facebook</a></div></div>
-  <ul><li>6 meses gratis</li><li>Ayuda para configurarla</li><li>Tu opinión define cómo queda la app</li><li>Requisito: un celular o tableta Android</li></ul>
+  <div><h2>¿Quieres ser tester de ChecaYa?</h2><p>Estamos buscando negocios para probar la app. Si quieres ser tester, contáctanos por Facebook y te damos los detalles.</p><div style="margin-top:26px"><a class="btn btn-borde" href="https://www.facebook.com/ChecaYaApp" target="_blank" rel="noopener">Escríbenos por Facebook</a></div></div>
+  <ul><li>Ayuda para configurarla</li><li>Tu opinión define cómo queda la app</li><li>Requisito: un celular o tableta Android</li></ul>
  </div>
 </div></section>
 
@@ -208,7 +214,7 @@ footer a:hover{color:#fff}
 const planes=[['Plan 10','Hasta 10',99,990],['Plan 20','Hasta 20',149,1490],['Plan 50','Hasta 50',299,2990],['Plan 100','Hasta 100',499,4990],['Plan 200','Hasta 200',899,8990],['Plan 500','Hasta 500',1999,19990],['Plan 500+','Hasta 1,000',3499,34990]];
 const f=n=>'$'+n.toLocaleString('es-MX');
 const t=document.getElementById('tabla');
-planes.forEach(([n,e,m,a])=>{t.insertAdjacentHTML('beforeend',`<div class="fila"><span>${n}</span><span>${e}</span><span class="m">${f(m)}</span><span>${f(a)}</span></div>`)});
+planes.forEach(([n,e,m,a])=>{t.insertAdjacentHTML('beforeend',`<div class="fila"><span>${n}</span><span>${e}</span><span class="m">${f(m)}</span><span class="a"><s>${f(a)}</s><b>${f(a/2)}</b></span></div>`)});
 </script>
 </body>
 </html>
